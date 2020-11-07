@@ -14,3 +14,30 @@ body {
     font-size: 30px;
     font-weight: bold;
 }
+
+
+
+
+.ball {
+    background: #DB8A74;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    opacity: 0;
+  }
+  
+  .ball2 {
+    background: #d16b4f;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    opacity: 0;
+  }
+  
+  .ball3 {
+    background: #b63b19;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    opacity: 0;
+  }
