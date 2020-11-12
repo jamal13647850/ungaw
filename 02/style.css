@@ -1,0 +1,13 @@
+#timer{
+    border: 1px solid red;
+    width: 75px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+}
+
+html, 
+body {
+    height: 100%;
+}

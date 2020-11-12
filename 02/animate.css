@@ -1,0 +1,58 @@
+
+.anim {
+    
+    animation: combined 50s linear infinite;
+    -webkit-animation: combined 50s linear infinite;
+    left:0;top:0;
+}
+@keyframes combined {
+    20%  {
+        top: 20%;
+        animation-timing-function: ease-out;
+    }
+    25%  {
+        top: 15%;
+        animation-timing-function: ease-out;
+    }
+    40% {
+        top: 40%;
+        animation-timing-function: ease-in;
+    }
+    45%  {
+        top: 35%;
+        animation-timing-function: ease-out;
+    }
+    60% {
+        top: 60%;
+        animation-timing-function: ease-in;
+    }
+    65%  {
+        top: 55%;
+        animation-timing-function: ease-out;
+    }
+    80% {
+        top: 80%;
+        animation-timing-function: ease-in;
+    }
+    85%  {
+        top: 75%;
+        animation-timing-function: ease-out;
+    }
+    100% {
+        transform: rotate(360deg);
+        top: 90%;
+        animation-timing-function: ease-out;
+        left:100%;
+        width:80px;
+        height:80px;
+    }
+}
+
+
+
+.paused {
+    -webkit-animation-play-state: paused !important;
+    -moz-animation-play-state: paused !important;
+    -o-animation-play-state: paused !important; 
+    animation-play-state: paused !important;
+}
