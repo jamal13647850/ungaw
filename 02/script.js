@@ -7,7 +7,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         time--;
         timer.innerHTML=time+" Seconds";
         if(time<1){
-            endGame(time);
+            endGame(time,ball);
             clearInterval(timerid);
         }
     },1000)
@@ -16,26 +16,28 @@ window.addEventListener('DOMContentLoaded', (event) => {
     ball.addEventListener("click", ()=>{
         clearInterval(timerid);
 
-        let Width  = ball.offsetWidth;
-        let Height = ball.offsetHeight;
-        let top    = ball.offsetTop;
-        let left   = ball.offsetLeft;
-        ball.classList.remove("anim");
-        ball.classList.add("paused");
-
-        ball.style.width = Width;
-        ball.style.height = Height;
-        ball.style.top = top;
-        ball.style.left = left;
 
 
-        endGame(time);
+        endGame(time,ball);
         
     });
 });
 
-const endGame = (time)=>{
-let scoreList = JSON.parse(localStorage.getItem("scoresList"));
+const endGame = (time,ball)=>{
+
+    let Width  = ball.offsetWidth;
+    let Height = ball.offsetHeight;
+    let top    = ball.offsetTop;
+    let left   = ball.offsetLeft;
+    ball.classList.remove("anim");
+    ball.classList.add("paused");
+
+    ball.style.width = Width;
+    ball.style.height = Height;
+    ball.style.top = top;
+    ball.style.left = left;
+    
+    let scoreList = JSON.parse(localStorage.getItem("scoresList"));
 
         alert("شما "+time + " امتیاز کسب نمودید");
 
