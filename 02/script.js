@@ -37,7 +37,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 const endGame = (time)=>{
 let scoreList = JSON.parse(localStorage.getItem("scoresList"));
 
-        alert("Your score is: "+time);
+        alert("شما "+time + " کسب کردید");
 
         for (var i = (scoreList.length-1); i >=0; i--) {
             if(scoreList[i].score==-1){
